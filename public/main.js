@@ -108,6 +108,7 @@ const lastCelebration = () => {
     }, 800);
     setTimeout(() => {
         //pollenScatters();
+        backgroundColorChange();
         alphabetDancing();
     }, 800)
 }
@@ -163,18 +164,21 @@ const pollenScatters = () => {
         let pollens = document.querySelectorAll('.pollen');
     }, 2000);
 
+    backgroundColorChange();
+}
+const backgroundColorChange = () => {
     // 배경 색상 변경
     const bd = document.body;
     let c1 = Math.floor(Math.random() * 155 + 100).toString(16);
     let c2 = Math.floor(Math.random() * 155 + 100).toString(16);
     let c3 = Math.floor(Math.random() * 155 + 100).toString(16);
-    document.body.style.transition = '0.9s';
-    document.body.style.backgroundColor = '#'+c1+c2+c3;
+    bd.style.backgroundColor = '#'+c1+c2+c3;
+    bd.style.transition = '0.9s';
     setInterval(() => {
         c1 = Math.floor(Math.random() * 155 + 100).toString(16);
         c2 = Math.floor(Math.random() * 155 + 100).toString(16);
         c3 = Math.floor(Math.random() * 155 + 100).toString(16);
-        document.body.style.backgroundColor = '#'+c1+c2+c3;
+        bd.style.backgroundColor = '#'+c1+c2+c3;
     }, 1000);   
 }
 
