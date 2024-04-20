@@ -168,13 +168,13 @@ const pollenScatters = () => {
     let c1 = Math.floor(Math.random() * 155 + 100).toString(16);
     let c2 = Math.floor(Math.random() * 155 + 100).toString(16);
     let c3 = Math.floor(Math.random() * 155 + 100).toString(16);
-    bd.style.backgroundColor = '#'+c1+c2+c3;
-    bd.style.transition = '0.9s';
+    document.body.style.transition = '0.9s';
+    document.body.style.backgroundColor = '#'+c1+c2+c3;
     setInterval(() => {
         c1 = Math.floor(Math.random() * 155 + 100).toString(16);
         c2 = Math.floor(Math.random() * 155 + 100).toString(16);
         c3 = Math.floor(Math.random() * 155 + 100).toString(16);
-        bd.style.backgroundColor = '#'+c1+c2+c3;
+        document.body.style.backgroundColor = '#'+c1+c2+c3;
     }, 1000);   
 }
 
