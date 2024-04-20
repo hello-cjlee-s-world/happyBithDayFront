@@ -107,7 +107,7 @@ const lastCelebration = () => {
         }    
     }, 800);
     setTimeout(() => {
-        pollenScatters();
+        //pollenScatters();
         alphabetDancing();
     }, 800)
 }
